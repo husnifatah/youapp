@@ -37,7 +37,6 @@ export default function LoginPage() {
       } else {
         payload.username = account;
       }
-      // ------------------------------------
 
       await loginUser(payload);
       router.push('/profile');

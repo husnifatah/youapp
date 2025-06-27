@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 type ProfileCardProps = {
   name?: string;
   username?: string;
@@ -15,7 +17,7 @@ export const ProfileCard = ({ name, username, birthday, gender, image, zodiac, h
     <div className="relative rounded-lg bg-white/5 p-4 min-h-[190px] overflow-hidden flex flex-col justify-end">
       {image && (
         <div className="absolute inset-0">
-          <img src={image} alt="Profile" className="w-full h-full object-cover" />
+          <Image src={image} alt="Profile" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
         </div>
       )}

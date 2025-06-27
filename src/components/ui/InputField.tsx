@@ -52,7 +52,7 @@ export default function InputField({ id, label, type = 'text', ...props }: Input
           onClick={togglePasswordVisibility}
           className="absolute inset-y-0 right-0 flex items-center pr-4 text-gray-400 hover:text-white"
         >
-          {isPasswordVisible ? <EyeOffIcon className="h-5 w-5"/> : <EyeIcon className="h-5 w-5" />}
+          {isPasswordVisible ? <EyeIcon className="h-5 w-5"/> : <EyeOffIcon className="h-5 w-5" />}
         </button>
       )}
     </div>
